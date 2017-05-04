@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ReactとRailsを組み合わせて使う場合のサンプルです。Webpackを利用し、react-railsやWebpackerは使いません。
 
-Things you may want to cover:
+# Memo
 
-* Ruby version
+ベースは http://techlife.cookpad.com/entry/2016/07/27/101015 の記事を参考にさせて頂きました。
 
-* System dependencies
+## 違い
 
-* Configuration
+- npm install時にbabel-coreも実施(エラーが出て必要だと表示されたので)
 
-* Database creation
+```
+npm install -D webpack babel-loader babel-preset-es2015 babel-preset-react
 
-* Database initialization
+```
 
-* How to run the test suite
+- webpack.config.jsの中身
+    - 相対パス指定で怒られたので、https://github.com/shakacode/react-webpack-rails-tutorial を参考に改変
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
